@@ -1,7 +1,6 @@
 {
   "name": "discord",
   "version": "0.1.0",
-  "homepage": "http://vann-dev.github.io/discord",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.0",
@@ -21,7 +20,8 @@
     "css": "npx tailwindcss -o src/index.css",
     "cssWatch": "npx tailwindcss -o src/index.css -w",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "production": "npx tailwindcss -o src/index.css && react-scripts build"
   },
   "eslintConfig": {
     "extends": [
